@@ -85,8 +85,16 @@ have a working setup for reading archives, you already have these files.
 
 - Round-trip verified against real vanilla blobs (encrypt(decrypt(x)) == x)
 - Full-archive rebuild parsed back identically by our reader
-- **In-game test passed**: a vanilla `update.rpf` with two entries replaced via the
+- **In-game test #8 passed**: a vanilla `update.rpf` with two entries replaced via the
   surgical technique above booted GTA V Enhanced and ran normally
+- **In-game test #9 passed**: `common/data/dlclist.xml` edited in-place (XML minified
+  to fit its original slot, one new `<Item>dlcpacks:/testpack/</Item>` entry added) and
+  a cloned DLC pack folder registered — game booted with the new pack accepted. This
+  is the exact path real add-on mods (vehicles, maps) use, so **installing community
+  add-ons without OpenIV is now possible on GTA V Enhanced**.
+
+Known limitation: after minification there is room for only ~1–2 extra entries in
+the existing `dlclist.xml` slot; larger edits need a strategy for more slack.
 
 ## Credits
 
