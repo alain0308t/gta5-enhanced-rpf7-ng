@@ -9,6 +9,11 @@
 > supervised and tested it on real hardware.
 > Manage your expectations accordingly: it works, but treat it like an alien artifact.
 
+## Contributors
+
+- **Opencode** — authored the implementation
+- **Alain** — testing and validation on real hardware
+
 First public implementation of the **encryption** direction of Rockstar's NG cipher
 used by RPF7 archives in **GTA V Enhanced** (PC). If you got here because your
 modified `update.rpf` crashes GTA V Enhanced, or because OpenIV doesn't support
